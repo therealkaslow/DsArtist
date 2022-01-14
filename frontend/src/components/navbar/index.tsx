@@ -5,7 +5,7 @@ function Navbar() {
     <header className='header'>
       <nav className="container">
         <div className="dstrap-nav-content">
-          <h1>DsTrap</h1>
+          <h1>DsArtist</h1>
           <a href="https://github.com/therealkaslow">
             <div className='dstrap-contact'>
               <GithubIcon/>
