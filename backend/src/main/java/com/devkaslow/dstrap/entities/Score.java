@@ -15,21 +15,20 @@ public class Score {
 	
 	public Score() {
 	}
-
+	
 	public Score(ScorePK id, Double value) {
-		super();
 		this.id = id;
 		this.value = value;
 	}
 
-	public void setArtist(Artist artist) {
-		id.setArtist(artist);
+	public void setMovie(Movie movie) {
+		id.setMovie(movie);
 	}
 	
 	public void setUser(User user) {
 		id.setUser(user);
 	}
-	
+
 	public ScorePK getId() {
 		return id;
 	}
@@ -45,5 +44,4 @@ public class Score {
 	public void setValue(Double value) {
 		this.value = value;
 	}
-	
 }
