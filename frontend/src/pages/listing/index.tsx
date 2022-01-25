@@ -1,18 +1,26 @@
 import axios from "axios";
 import ArtistCard from "components/navbar/ArtistCard";
 import Pagination from "components/navbar/Pagination";
+import { useEffect, useState } from "react";
+import { MoviePage } from "types/movie";
 import { BASE_URL } from "utils/requests";
 
 function Listing() {
 
-  // FORMA QUE N DEVO FAZER //
-  axios.get(`${BASE_URL}/artistas`)
-          .then(response  => {
-            console.log(response.data);
-          });
+  const [pageNumber, setPageNumber] = useState(0);
+
+  useEffect(() => {
+    axios.get(`${BASE_URL}/artistas`)
+    .then(response  => {
+      const data = response.data as MoviePage;
+      console.log(data);
+      setPageNumber(data.number);
+    });
+  }, []);
 
   return (
     <>
+    <p>{pageNumber}</p>
       <Pagination />
 
       <div className="container">
