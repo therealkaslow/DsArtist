@@ -14,7 +14,6 @@ import com.devkaslow.dstrap.services.MovieService;
 @RestController
 @RequestMapping(value ="/movies")
 public class MovieController {
-	
 	@Autowired
 	private MovieService service;
 	
