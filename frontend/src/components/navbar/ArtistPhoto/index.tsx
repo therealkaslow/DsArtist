@@ -7,7 +7,9 @@ const movie = {
     count: 2,
     score: 4.5
 };
-
+type Props = {
+  
+}
 function ArtistPhoto() {
   return (
     <div>
@@ -18,7 +20,7 @@ function ArtistPhoto() {
       />
       <div className="dsmovie-card-bottom-container">
         <h3>{movie.title}</h3>
-        <ArtistScore />
+        <ArtistScore score={0} count={0} />
         <div className="btn btn-primary dsmovie-btn">Avaliar</div>
       </div>
     </div>
