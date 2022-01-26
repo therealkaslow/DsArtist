@@ -12,7 +12,7 @@ import com.devkaslow.dstrap.dto.MovieDTO;
 import com.devkaslow.dstrap.services.MovieService;
 
 @RestController
-@RequestMapping(value ="/artistas")
+@RequestMapping(value ="/movies")
 public class MovieController {
 	
 	@Autowired
