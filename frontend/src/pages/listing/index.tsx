@@ -19,7 +19,6 @@ function Listing() {
     numberOfElements: 0,
     empty: true,
   });
-
   useEffect(() => {
     axios
       .get(`${BASE_URL}/movies?size=8&page=${pageNumber}&sort=id`)
